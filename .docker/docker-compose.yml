@@ -1,0 +1,27 @@
+version: '3.7'
+
+networks:
+    api-rest:
+
+services:
+    php:
+        container_name: symfony-api
+        build:
+            context: ./php
+            args:
+                TIMEZONE: ${TIMEZONE}
+        volumes:
+            - ${SYMFONY_APP_PATH}:/var/www/symfony
+        networks:
+            - "api-rest"
+    nginx:
+        build:
+            context: ./nginx
+        volumes:
+            - ${SYMFONY_APP_PATH}:/var/www/symfony
+        ports:
+            - "80:80"
+        networks:
+            - "api-rest"
+        env_file:
+            - .env.nginx.local

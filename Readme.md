@@ -19,3 +19,29 @@ It is composed by 2 containers:
 
 4. Inside the `php` container, run `composer install` to install dependencies from `/var/www/symfony` folder.
 
+## Run Scritps
+
+🧹 Keep a modern codebase with **PHP Coding Standards Fixer**:
+```bash
+composer lint
+```
+
+✅ Run refactors using **Rector**
+```bash
+composer refacto
+```
+
+⚗️ Run static analysis using **PHPStan**:
+```bash
+composer test:types
+```
+
+✅ Run unit tests using **PHPUnit**
+```bash
+composer test:unit
+```
+
+🚀 Run the entire test suite:
+```bash
+composer test
+```

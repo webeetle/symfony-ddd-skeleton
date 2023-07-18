@@ -2,9 +2,7 @@
 
 namespace App\Application\Exception;
 
-use Laminas\Code\Exception\RuntimeException;
-
-class UnexpectedTypeException extends RuntimeException
+class UnexpectedTypeException extends \RuntimeException
 {
     private const CODE = 500;
 

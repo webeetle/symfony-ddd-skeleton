@@ -31,7 +31,6 @@ return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->sets([
         SetList::PHP_82,
         DoctrineSetList::DOCTRINE_CODE_QUALITY,
-        DoctrineSetList::DOCTRINE_ODM_23,
-        SymfonySetList::SYMFONY_62
+        SymfonySetList::SYMFONY_63
     ]);
 };

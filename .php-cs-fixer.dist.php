@@ -15,7 +15,7 @@ return (new PhpCsFixer\Config())
         'no_trailing_whitespace' => true,
         'no_space_around_double_colon' => true,
         'multiline_whitespace_before_semicolons' => true,
-        'single_blank_line_before_namespace' => true,
+        'blank_lines_before_namespace' => true,
         'single_blank_line_at_eof' => true,
     ])
     ->setFinder($finder);

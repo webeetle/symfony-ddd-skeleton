@@ -5,5 +5,3 @@ parameters:
         - tests
     symfony:
         containerXmlPath: var/cache/dev/App_KernelDevDebugContainer.xml
-    scanDirectories:
-        - var/cache/dev/Symfony/Config

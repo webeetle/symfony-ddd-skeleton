@@ -16,6 +16,11 @@ return static function (RectorConfig $rectorConfig): void {
         __DIR__ . '/src',
         __DIR__ . '/tests',
     ]);
+
+    $rectorConfig->skip([
+        __DIR__.'/src/Migrations',
+    ]);
+
     $rectorConfig->indent(' ', 4);
 
     // PHP version defined
